@@ -52,20 +52,20 @@ pip install opencv-python numpy pytesseract
 Procesar una imagen de INE:
 
 ```bash
-python ine_ocr_optimized.py ruta/a/ine_frente.jpg
+python ine_ocr.py ruta/a/ine_frente.jpg
 ```
 
 Guardar el resultado en JSON:
 
 ```bash
-python ine_ocr_optimized.py ruta/a/ine_frente.jpg -o salida.json
+python ine_ocr_o.py ruta/a/ine_frente.jpg -o salida.json
 ```
 
 Activar modo debug para inspeccionar preprocesos y texto:
 
 ```bash
-python ine_ocr_optimized.py ruta/a/ine_frente.jpg --debug
-python ine_ocr_optimized.py ruta/a/ine_frente.jpg --debug --debug-dir ./debug_output
+python ine_ocr.py ruta/a/ine_frente.jpg --debug
+python ine_ocr.py ruta/a/ine_frente.jpg --debug --debug-dir ./debug_output
 ```
 
 En debug se generan imágenes intermedias y un reporte sencillo para revisar por qué se eligió cierto OCR y qué campos se extrajeron.
@@ -75,7 +75,7 @@ En debug se generan imágenes intermedias y un reporte sencillo para revisar por
 ## Uso como módulo
 
 ```python
-from ine_ocr_optimized import process_single_image, INEExtractor
+from ine_ocr import process_single_image, INEExtractor
 
 # Caso simple
 data = process_single_image("ruta/a/ine_frente.jpg")
