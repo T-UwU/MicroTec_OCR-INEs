@@ -1,6 +1,6 @@
 ## INE OCR – Extracción y validación heurística
 
-Script en Python para extraer datos de la credencial INE (frente unicamente hasta ahora) usando OCR y aplicar una heurística de calidad.  
+Script en Python para extraer datos de la credencial INE (frente unicamente hasta ahora) usando OCR y aplicar heurística.  
 
 - Taiga #11: recalibrar heurística OCR para reducir falsos positivos de INEs “legibles”.
 - Taiga #20: crear script para validar OCR
